@@ -1,3 +1,4 @@
+trans/build/ssl/
 trans/deps/curl-7.71.1/
 trans/deps/libevent-1.4.11-stable/
 trans/deps/openssl-1.0.2d/
