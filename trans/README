@@ -1,0 +1,7 @@
+How to build transmission 2.03
+The libraries are included in the repo, in needed use the download script to get the compressed libs needed.
+The repo also includes a pre-compiled binary ready to use on /build/transmission/bin
+run the build scripts in the order by file name to rebuild the binary from scratch, if needed.
+
+
+
