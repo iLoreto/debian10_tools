@@ -4,6 +4,7 @@ apt-get update -y
 apt-get upgrade -y
 echo "adding tools"
 apt-get install zsh git nano cmatrix tmux ufw lolcat sysvbanner -y
+ln -s /usr/games/lolcat /usr/bin/lolcat
 echo "setting up ufw"
 systemctl enable ufw
 systemctl start ufw
@@ -20,8 +21,7 @@ uname -snrvm > /var/run/motd.dynamic
 systemctl disable motd
 mkdir /etc/update-motd.d
 rm -f /etc/motd
-cp /var/tools/motd/10logo /etc/update-motd.d/
-cp /var/tools/motd/20updates /etc/update-motd.d/
+cp motd/10logo /etc/update-motd.d/
+cp motd/20updates /etc/update-motd.d/
 chmod a+x /etc/update-motd.d/*
-
 echo "done"
