@@ -1,7 +1,6 @@
 How to build transmission 2.03
 The libraries are included in the repo, if needed, use the download script to get the compressed libs needed.
-The repo also includes a pre-compiled binary ready to use on /build/transmission/bin
+The repo also includes a pre-compiled binary ready to use on /build/transmission/bin; just run ./6_run_transmission.sh with user; run once to create settings.json
+file on `~/.config/transmission-daemon/` edit whiltelist, add your IP, change the default port and update firewall with `sudo ufw allow ####/tcp`
+
 run the build scripts in the order by file name to rebuild the binary from scratch, if needed.
-
-
-

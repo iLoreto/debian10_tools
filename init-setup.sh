@@ -3,7 +3,7 @@ echo "updating system"
 apt-get update -y
 apt-get upgrade -y
 echo "adding tools"
-apt-get install zsh git nano cmatrix tmux ufw lolcat sysvbanner -y
+apt-get install build-essential htop zsh git nano cmatrix tmux ufw lolcat sysvbanner -y
 ln -s /usr/games/lolcat /usr/bin/lolcat
 echo "setting up ufw"
 systemctl enable ufw
